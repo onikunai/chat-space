@@ -1,0 +1,188 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-side {
+  width: $w-left;
+  display: inline-block;
+  color: #ffffff;
+  &__header {
+    height: $hi-hd;
+    padding: 0 20px;
+    background-color: #253141;
+    &__user {
+      width: 85%;
+      display: inline-block;
+      padding: 35px 0 0;
+      font-size: $fo-si-hd-user;
+      font-weight: bold;
+      line-height: $line-hi-user;
+      box-sizing: border-box;
+    }
+    &__new-group {
+      display: inline-block;
+      font-size: $fo-si-hd-user;
+      line-height: $line-hi-user;
+      box-sizing: border-box;
+      a {
+        text-decoration: none;
+      }
+    }
+    &__edit-user {
+      display: inline-block;
+      font-size: $fo-si-hd-user;
+      line-height: $line-hi-user;
+      box-sizing: border-box;
+    }
+  }
+  &__groups {
+    height: calc(100vh - #{$hi-hd});
+    padding: 0 20px;
+    background-color: #2f3e51;
+    &__name {
+      padding: $pad-grs-name 0 0;
+      font-size: $fo-si-grs-name;
+      line-height: $line-hi-grs-name;
+    }
+    &__latest {
+      padding: $pad-grs-lat-up 0 $pad-grs-lat-down;
+      font-size: $fo-si-grs-lat;
+      line-height: $line-hi-grs-lat;
+    }
+    &__name2 {
+      padding: $pad-grs-name 0 0;
+      font-size: $fo-si-grs-name;
+      line-height: $line-hi-grs-name;
+    }
+    &__latest2 {
+      padding: $pad-grs-lat-up 0 $pad-grs-lat-down;
+      font-size: $fo-si-grs-lat;
+      line-height: $line-hi-grs-lat;
+    }
+    &__name3 {
+      padding: $pad-grs-name 0 0;
+      font-size: $fo-si-grs-name;
+      line-height: $line-hi-grs-name;
+    }
+    &__latest3 {
+      padding: $pad-grs-lat-up 0 $pad-grs-lat-down;
+      font-size: $fo-si-grs-lat;
+      line-height: $line-hi-grs-lat;
+    }
+  }
+}
+
+.chat-main {
+  width: calc(100vw - #{$w-left});
+  float: right;
+  background-color: $bgc-ch-main;
+  color: #434a54;
+  &__header {
+    height: $hi-hd - 1px;
+    padding: 0 $pad-main;
+    border-bottom: solid 1px #eeeeee;
+    &__group {
+      padding: 35px 0 0;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__member {
+      padding: 15px 0 0;
+      font-size: $fo-si-hd-mem;
+      line-height: $line-hi-hd-mem;
+      color: $fon-col-hd-mem;
+    }
+    &__edit-btn {
+      height: 40px;
+      float: right;
+      margin: 28px 0 0 0;
+      padding: 0 20px;
+      font-size: 30px;
+      color: $fon-col-hd-edit;
+      border: solid 1px $fon-col-hd-edit;
+      text-align: right;
+      a {
+        text-decoration: none;
+      }
+    }
+  }  
+  &__messages {
+    height: calc(100vh - #{$hi-hd} - #{$hi-form});
+    padding: 6px $pad-main 0;
+    box-sizing: border-box;
+    &__user {
+      display: inline-block;
+      padding: $pad-mes-user 0 0;
+      font-size: $fo-si-mes-user;
+      line-height: $line-hi-mes-user;
+    }
+    &__day {
+      display: inline-block;
+      padding-left: $pad-mes-day;
+      font-size: $fo-si-hd-mem;
+      line-height: $line-hi-hd-mem;
+      color: $fon-col-hd-mem;
+    }
+    &__text {
+      padding: $pad-mes-text 0 0;
+      font-size: $fo-si-mes-text;
+      line-height: $line-hi-mes-text;
+    }
+    &__user2 {
+      display: inline-block;
+      padding: $pad-mes-user 0 0;
+      font-size: $fo-si-mes-user;
+      line-height: $line-hi-mes-user;
+    }
+    &__day2 {
+      display: inline-block;
+      padding-left: $pad-mes-day;
+      font-size: $fo-si-hd-mem;
+      line-height: $line-hi-hd-mem;
+      color: $fon-col-hd-mem;
+    }
+    &__text2 {
+      padding: $pad-mes-text 0 0;
+      font-size: $fo-si-mes-text;
+      line-height: $line-hi-mes-text;
+    }
+  }
+  &__form {
+    height: $hi-form;
+    padding: $pad-form $pad-main;
+    background-color: #ddd;
+    box-sizing: border-box;
+    &__send {
+      width: $w-form-send;
+      float: right;
+      margin: 0 0 0 15px;
+      background-color: #38AEF0;
+      font-size: 20px;
+      line-height: $line-hi-from-text;
+      text-align: center;
+      color: #ffffff;
+    }
+    &__input {
+      position: relative;
+      width: calc(95% - #{$w-form-send});
+      background-color: $bgc-ch-main;
+      padding-left: 16px;
+      line-height: $line-hi-from-text;
+      &__text {
+        width: 80%;
+        font-size: $fo-si-mes-user;
+        font-weight: bold;
+      }
+      &__image {
+        position: absolute;
+        top: 0;
+        right:  10px;
+        &__file {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+!!!
+.chat-side
+  .chat-side__header
+    .chat-side__header__user
+      user
+    .chat-side__header__new-group
+      =link_to "https://www.facebook.com/" do
+        %i.fas.fa-edit
+    .chat-side__header__edit-user
+      =link_to "https://twitter.com/" do
+        %i.fa.fa-cog
+  .chat-side__groups
+    .chat-side__groups__name
+      test1
+    .chat-side__groups__latest
+      latest-message
+    .chat-side__groups__name2
+      box
+    .chat-side__groups__latest2
+      latest-box
+    .chat-side__groups__name3
+      pen
+    .chat-side__groups__latest3
+      latest-pen
+
+.chat-main
+  .chat-main__header
+    .chat-main__header__edit-btn
+      =link_to 'Edit', "https://www.instagram.com/"
+    .chat-main__header__group
+      test1
+    .chat-main__header__member
+      Member : user
+
+
+  .chat-main__messages
+    .chat-main__messages__user
+      user
+    .chat-main__messages__day
+      2019-10-1
+    .chat-main__messages__text
+      hello
+    .chat-main__messages__user2
+      user
+    .chat-main__messages__day2
+      2019-10-3
+    .chat-main__messages__text2
+      latest-message
+  .chat-main__form
+    .chat-main__form__send
+      Send
+    .chat-main__form__input
+      .chat-main__form__input__text
+        cu
+      .chat-main__form__input__image
+        %label.label
+          =fa_icon'image'
+          %input.chat-main__form__input__image__file{:name => "message[image]", :id => "message_image", :type => "file"}
