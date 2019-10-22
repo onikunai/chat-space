@@ -1,9 +1,6 @@
 $(function(){
   function buildHTML(message){
-    var insertImage = '';
-    if (message.image.url) {
-      insertImage = `<img src="${message.image.url}">`;
-    }
+    var insertImage = message.image.url ? `<img src="${message.image.url}">` : '';
     var html = `<div class='chat-main__messages__user'>
                   ${message.name}
                 </div>
@@ -32,8 +29,7 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.chat-main__messages').append(html)
-      $('.chat-main__form__message').val('')
-      $('#message_image').val('')
+      $('.new_message').get(0).reset();
       $('.chat-main__form__submit').prop('disabled', false);
       $('.chat-main__messages').animate({scrollTop: $(".chat-main__messages")[0].scrollHeight}, 1500);
     })
