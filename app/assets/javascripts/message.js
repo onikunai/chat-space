@@ -39,3 +39,15 @@ $(function(){
     })
   })
 })
+
+
+
+
+//       var html = buildHTML(data);
+//       $('.chat-main__messages').append(html)
+//       $('.new_message').get(0).reset();
+//       $('.chat-main__form__submit').prop('disabled', false);
+//       $('.chat-main__messages').animate({scrollTop: $(".chat-main__messages")[0].scrollHeight}, 1500);
+//     })
+//   });
+// });
