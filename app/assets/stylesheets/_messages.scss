@@ -98,6 +98,7 @@ html, body {
     padding: 6px $pad-main 0;
     box-sizing: border-box;
     overflow: scroll;
+    &__body{
       &__user {
         display: inline-block;
         padding: $pad-mes-user 0 0;
@@ -116,6 +117,7 @@ html, body {
         font-size: $fo-si-mes-text;
         line-height: $line-hi-mes-text;
       }
+    }
   }
   &__form {
     background-color: #DDDDDD;
