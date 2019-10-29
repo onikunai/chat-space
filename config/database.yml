@@ -50,8 +50,11 @@ test:
 production:
   <<: *default
   database: chat-space_production
+  # ローカル設定
   # username: chat-space
   # password: <%= ENV['CHAT-SPACE_DATABASE_PASSWORD'] %>
+  
+  # AWS設定
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
