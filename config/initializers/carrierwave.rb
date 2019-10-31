@@ -14,4 +14,5 @@ CarrierWave.configure do |config|
 
   config.fog_directory  = 'greentea5461'
   config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/greentea5461'
+  
 end
