@@ -29,12 +29,21 @@ html, body {
       a {
         text-decoration: none;
       }
+      // &fa.fa-edit {
+      //   color: #ffffff;
+      // }
     }
     &__edit-user {
       display: inline-block;
       font-size: $fo-si-hd-user;
       line-height: $line-hi-user;
       box-sizing: border-box;
+      // &fa.fa-cog {
+      //   color: #ffffff;
+      // }
+    }
+    &__btn {
+      color:#fff;
     }
   }
   &__groups {
@@ -84,9 +93,10 @@ html, body {
       float: right;
       margin: 28px 0 0 0;
       padding: 0 20px;
-      font-size: 30px;
+      // font-size: 30px;
       color: $fon-col-hd-edit;
       border: solid 1px $fon-col-hd-edit;
+      line-height: 40px;
       text-align: right;
       a {
         text-decoration: none;
@@ -123,7 +133,7 @@ html, body {
     background-color: #DDDDDD;
     box-sizing: border-box;
     height: 90px;
-    padding: 20px 50px 20px 40px;
+    padding: 20px 40px;
     &__message {
       border: none;
       float: left;

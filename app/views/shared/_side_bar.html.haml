@@ -3,10 +3,10 @@
     .chat-side__header__user
       = current_user.name
     .chat-side__header__new-group
-      = link_to new_group_path do
+      = link_to new_group_path , class: "chat-side__header__btn" do
         %i.fa.fa-edit
     .chat-side__header__edit-user
-      = link_to edit_user_path(current_user) do
+      = link_to edit_user_path(current_user) , class: "chat-side__header__btn" do
         %i.fa.fa-cog
   .chat-side__groups
     - current_user.groups.each do |group|
