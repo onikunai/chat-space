@@ -51,15 +51,17 @@ html, body {
     padding: 0 20px;
     background-color: #2f3e51;
     overflow: scroll;
-    .group {
+    &__box {
       box-sizing: border-box;
       padding: 20px 0 40px;
       &__name {
         font-size: $fo-si-grs-name;
+        color:#fff;
       }
       &__message {
         font-size: $fo-si-grs-lat;
         margin-top: 5px;
+        color:#fff;
       }
     }
   }
